@@ -1,0 +1,8 @@
+{
+    "name": "Socket Server for Heroku",
+    "description": "Simple socket server for Heroku.",
+    "repository": "https://github.com/ging-dev/socket-server",
+    "logo": "https://i.imgur.com/r4o3Kc0.png",
+    "keywords": ["socket", "server", "heroku", "node"],
+    "image": "heroku/nodejs"
+}
