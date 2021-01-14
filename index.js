@@ -10,7 +10,7 @@ app.get('/', (req, res) => res.send('Server working...'));
 
 const io = socket(server, {
   cors: {
-    origin: process.env.DOMAIN,
+    origin: process.env.DOMAIN || ['localhost'],
     methods: ['GET', 'POST']
   }
 });
@@ -18,7 +18,6 @@ const io = socket(server, {
 io.on('connection', (socket) => {
   console.log('user connected: ' + socket.id);
   socket.onAny((event, data) => {
-    console.log(socket.id + ' send: '+ data);
     io.emit(event, data);
   });
   socket.on('disconnect', () => {
