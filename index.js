@@ -16,7 +16,7 @@ const io = socket(server, {
 });
 
 io.on('connection', (socket) => {
-  console.log('user connected: ' + socket.id);
+  console.log(`user connected: ${socket.id}`);
   socket.onAny((event, data) => {
     io.emit(event, data);
   });
@@ -26,5 +26,5 @@ io.on('connection', (socket) => {
 });
 
 server.listen(port, () => {
-  console.log('listening on *:' + port);
+  console.log(`listening on *:${port}`);
 });
