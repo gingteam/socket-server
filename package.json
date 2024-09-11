@@ -13,7 +13,7 @@
   "author": "gingdev",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.1",
+    "body-parser": "^1.20.3",
     "express": "^4.20.0",
     "express-access-token": "^1.0.3",
     "socket.io": "^4.7.5"
