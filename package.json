@@ -13,8 +13,8 @@
   "author": "gingdev",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.3",
-    "express": "^5.0.1",
+    "body-parser": "^1.20.4",
+    "express": "^5.2.1",
     "express-access-token": "^1.0.3",
     "socket.io": "^4.8.0"
   },
